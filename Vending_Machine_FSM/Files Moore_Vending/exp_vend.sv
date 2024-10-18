@@ -39,8 +39,8 @@ module exp_vend(
                 begin
                     if(reset==1)
                         begin
-                            rs10reg=0;
-                            rs5reg=0;
+                            rs10reg<=0;
+                            rs5reg<=0;
                             state1<=S0;
                         end
                     else
@@ -51,7 +51,7 @@ module exp_vend(
                         end
                 end
                         
-            always@(state1 or rs10reg or rs5reg or reset)
+            always_ff@(state1 or rs10reg or rs5reg or reset)
                     if(reset==1)
                         begin
                             statenext<=0;
@@ -128,6 +128,11 @@ module exp_vend(
                                     rs5out=1;
                                 end
                         endcase
-                     end                                                               
+                     end
+            initial 
+                        begin
+		            $dumpfile("dump.vcd");
+		            $dumpvars(0, tb_RegisterFile);
+                        end
             
 endmodule
