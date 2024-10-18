@@ -3,8 +3,7 @@
 
 ### Setup
 - You need either Quartus Prime Lite, Vivado XLS or [YoSYS](https://github.com/YosysHQ/yosys).
-- For Quartus Prime, request @alfadelta10010 to provide you with the install files.
-- In Quartus, select any board of your choice
+- You can choose to use EDA playground for test benches
 
 ### Notes
 - Write your code, compile it, and generate RTL diagram.
