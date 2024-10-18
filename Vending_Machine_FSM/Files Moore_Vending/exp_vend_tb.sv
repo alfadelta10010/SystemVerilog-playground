@@ -45,4 +45,10 @@ module exp_vend_tb();
             #10;rs5=1;rs10=0;
             #10;$finish;
         end
+        
+    initial 
+        begin
+		    $dumpfile("dump.vcd");
+		    $dumpvars(0, tb_RegisterFile);
+        end
 endmodule
