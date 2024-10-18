@@ -129,10 +129,5 @@ module exp_vend(
                                 end
                         endcase
                      end
-            initial 
-                        begin
-		            $dumpfile("dump.vcd");
-		            $dumpvars(0, tb_RegisterFile);
-                        end
             
 endmodule
