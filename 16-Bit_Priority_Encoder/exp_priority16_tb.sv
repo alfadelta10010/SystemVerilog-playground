@@ -46,4 +46,10 @@ module exp_priority16_tb();
                  Din=16'b01XXXXXXXXXXXXXX;#10;
                  Din=16'b1XXXXXXXXXXXXXXX;#10;
         end
+
+        initial 
+        begin
+		    $dumpfile("dump.vcd");
+		    $dumpvars(0, tb_RegisterFile);
+        end
 endmodule
