@@ -95,4 +95,10 @@ module exp_decoder532_tb();
                  Din=5'b11110;#10;
                  Din=5'b11111;#10;
         end
+
+        initial 
+        begin
+		    $dumpfile("dump.vcd");
+		    $dumpvars(0, tb_RegisterFile);
+        end
 endmodule
