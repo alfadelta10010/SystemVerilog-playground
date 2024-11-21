@@ -3,8 +3,7 @@
 
 ### Setup
 - You need either Quartus Prime Lite, Vivado XLS or [YoSYS](https://github.com/YosysHQ/yosys).
-- For Quartus Prime, request @alfadelta10010 to provide you with the install files.
-- In Quartus, select any board of your choice
+- You can choose to use EDA playground for test benches
 
 ### Notes
 - Write your code, compile it, and generate RTL diagram.
@@ -12,6 +11,10 @@
 - All test bench writing is optional task, but it carries more points than the design
 - This repository may update with more projects over the course of the hackathon, **remember to sync fork and pull before starting to make changes**
 - Additionally feel free to suggest modules
+- Self checking test-benches: 50 points
+- Layered testbench: 500 points
+- Simple testbenches: 25 points
+
 
 #### Maintainer: Abhiram Gopal Dasika (@alfadelta10010)
 
@@ -40,3 +43,4 @@
 - [Parameterised RAM](https://github.com/alfadelta10010/SystemVerilog-playground/tree/main/Param_RAM)
 - [HDL ROM Module](https://github.com/alfadelta10010/SystemVerilog-playground/tree/main/HDL_ROM)
 - [4-Bit Hex Decoder](https://github.com/alfadelta10010/SystemVerilog-playground/tree/main/4-Bit_Hex_Decoder)
+
